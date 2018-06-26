@@ -1,0 +1,27 @@
+<div class="border rounded border-warning">
+    <div class="modal-header border-warning">
+        <div class="col-12 ">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h4 class="modal-title"><b>Game Rules</b></h4>
+                    <!-- <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal-body">
+        <b><p>You will have two minutes to play.<br/>
+        In the end we will show your score.<br/>
+        Fill the input with the character's name.<br/>
+        If you know the character identity only by the image, you will get ten points.<br/>
+        If you click in the ... button, some character info will appear, but you will get only five points.<br/>
+        You can try as much as you want.<br/>
+        Good luck, and may the force be with you JEDI.</p></b>
+    </div>
+    <div class="modal-footer border-warning">
+        <button type="button" class="btn btn-outline-warning" (click)="activeModal.close('Close click')">Close</button>
+        <button type="button" class="cu btn btn-warning" (click)="goQuiz()">I agree, go to quiz!</button>
+    </div>
+</div>

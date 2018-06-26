@@ -1,0 +1,102 @@
+@font-face {
+    font-family: starJedi;
+    src: url('../../assets/fonts/Starjedi.ttf');
+}
+*{
+    font: 105% starJedi;
+}
+
+.rc{
+    display: flex !important;
+    // justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+#time{
+    color: #ffd700;
+    font-size: 250%;
+    position: fixed;
+    z-index: 1;
+    display: flex !important;
+    text-align: center;
+    background-color: black;
+    padding-left: 4%;
+    padding-right: 4%;
+    top: 2%;
+}
+
+
+.correct{
+    background-color: green;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.errou{
+    background-color: red;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.correct2{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#dw{
+    vertical-align: middle;
+    left: 8%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center !important;
+}
+
+.btns{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.cf {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+#princ{
+    margin-top: 3%;
+}
+
+.btns1{
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin-left: -2.5%;
+}
+.btns2{
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin-right: -2.5%;
+}
+
+.trans:hover{
+    color:black;
+}
+
+.tam{
+    width: 10%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.bg{
+    background-color: white;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 10rem;
+}
+// .card{
+//     width: 100% !important;
+//     height: 100% !important;
+// }

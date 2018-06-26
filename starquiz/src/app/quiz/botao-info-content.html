@@ -1,0 +1,29 @@
+<div class="border rounded border-warning">
+        <div class="modal-header border-warning">
+            <div class="col-12 ">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h4 class="modal-title"><b>Person Info</b></h4>
+                        <!-- <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal-body">
+                <img class="rounded-circle" src="{{person.image}}"  alt="Card image cap"><br/><br/>
+                <b>Height: {{person.height}}</b><br />
+                <b>Specie: {{person.species}}</b><br />
+                <b>Mass: {{person.mass}}</b><br />
+                <b>Hair Color: {{person.hair_color}}</b><br />
+                <b>Skin Color: {{person.skin_color}}</b><br />
+                <b>Homeworld: {{person.homeworld}}</b><br />
+                <b>Films: {{person.films}}</b><br />
+                <b>Starships: {{person.starships}}</b><br /> 
+                <b>Vehicles: {{person.vehicles}}</b><br /> 
+        </div>
+        <div class="modal-footer border-warning">
+            <button type="button" class="btn btn-outline-warning" (click)="activeModal.close('Close click')">Close</button>
+        </div>
+    </div>

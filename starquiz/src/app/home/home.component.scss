@@ -1,0 +1,31 @@
+@font-face {
+    font-family: starJedi;
+    src: url('../../assets/fonts/Starjedi.ttf');
+}
+p{
+    font: 36px starJedi;
+    color: #ffd700;
+    margin-top: -6.6%;
+    // margin-left: 36%;
+    font-size: 700%;
+}
+#dw{
+    margin-top: -3%
+}
+
+#logo{
+    width: 30%;
+}
+
+img{
+    width: 20%;
+    // margin-left: 36%;
+    // margin-top: -0.5%;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

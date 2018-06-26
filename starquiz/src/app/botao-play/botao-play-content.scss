@@ -1,0 +1,31 @@
+div{
+    background-color: #000000;
+    color: #ffd700;
+}
+.modal-body{
+    text-align: center;
+}
+.modal-title{
+    text-align: center;
+}
+h4{
+    //margin-left: 33%;
+}
+.btn{
+    font-weight: bold;
+}
+.btn:hover{
+    color: black;
+}
+.cu:hover{
+    text-decoration: underline; 
+}
+
+.cu{
+    color: black;
+}
+
+.modal-footer {
+    display: flex !important;
+    justify-content: space-between !important;
+}

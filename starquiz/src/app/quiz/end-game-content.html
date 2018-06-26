@@ -1,0 +1,43 @@
+<div class="border rounded border-warning">
+        <div class="modal-header border-warning">
+            <div class="col-12 ">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h4 class="modal-title"><b>Game Over</b></h4>
+                        <!-- <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+                            <span aria-hidden="true">&times;</span>
+                        </button> -->
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal-header border-warning">
+                <div class="col-12 ">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h4 class="modal-title"><b>You scored <h1>{{point}}</h1> points</b></h4>
+                            <!-- <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+                                <span aria-hidden="true">&times;</span>
+                            </button> -->
+                    </div>
+                </div>
+                </div>
+            </div>
+        <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <!-- <label for="exampleInputName1"><b>Name</b></label> -->
+                      <input [(ngModel)]="rank.name" name="rank" type="text" class="form-control" id="rank" placeholder="Name">
+                    </div>
+                        <div class="form-group">
+                          <!-- <label for="exampleInputEmail1"><b>Email address</b></label> -->
+                          <input [(ngModel)]="rank.email" name="rank" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <button type="submit" class="btn btn-outline-warning" (click)="gravar(point)">Submit</button>
+                      </form>
+        </div>
+        <div class="modal-footer border-warning">
+            <button type="button" class="btn btn-outline-warning" (click)="playAgain()">Play again</button>
+        </div>
+    </div>

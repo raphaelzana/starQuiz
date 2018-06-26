@@ -1,0 +1,38 @@
+<div><!--div header-->
+  <img class="tam" src="../../assets/img/logosw.jpg"><img class="tam bg" src="../../assets/img/xxx.jpg"><img class="tam bg" src="../../assets/img/xxx.jpg"><img class="tam bg" src="../../assets/img/xxx.jpg"><img class="tam bg" src="../../assets/img/xxx.jpg"><img class="tam bg" src="../../assets/img/xxx.jpg"><img class="tam bg" src="../../assets/img/xxx.jpg"><img class="tam bg" src="../../assets/img/xxx.jpg"><img class="tam bg" src="../../assets/img/OKcJPaeN_400x400.jpg">
+  <div class="container-fluid cf" id="princ" [ngClass]="{'correct2' :(bloq)}">
+  <div id="time" class="border border-warning"><app-timer (onEndTimer)="endGame()"></app-timer></div>
+<!--div card top row-->
+    <div class="card-deck" style="justify-content: center;">
+  <div class="card border-warning mb-3 mr-2" *ngFor="let person of topRow" [ngClass]="{'correct' :person.blockConfirm, 'errou' :person.errou}">
+      <img class="card-img-top" src="{{person.image}}"  alt="Card image cap">
+      <div class="card-body">
+        <input type="text" class="form-control" [(ngModel)]="person.resp" placeholder="{{person.resp}}" aria-label="Username" aria-describedby="basic-addon1">
+        <div class="btns">
+        <button class="btn btn-warning" (click)="info(person)">...</button>
+        <button class="btn btn-warning" (click)="confirm(person)">?</button></div>
+      </div>
+    </div>
+  </div>
+  <!--div card bottom row-->
+  <div class="card-deck" style="justify-content: center;">
+      <div class="card border-warning mb-3 mr-2" *ngFor="let person of bottomRow" [ngClass]="{'correct' :person.blockConfirm, 'errou' :person.errou}">
+          <img class="card-img-top" src="{{person.image}}"  alt="Card image cap">
+          <div class="card-body">
+            <input type="text" class="form-control" [(ngModel)]="person.resp" placeholder="{{person.resp}}" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="btns">
+            <button class="btn btn-warning" (click)="info(person)">...</button>
+            <button href="#" class="btn btn-warning" (click)="confirm(person)">?</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid btns">
+        <div class="container-fluid btns1">
+        <button *ngIf="previous != null" (click)="changePages(previous)" class="btn btn-outline-warning trans" >previous</button>
+        </div>
+        <div class="container-fluid btns2">
+        <button *ngIf="next != null" (click)="changePages(next)" class="btn btn-outline-warning trans">next</button>
+      </div>
+      </div>
+  </div>
+</div>
