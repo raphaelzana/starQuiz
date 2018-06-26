@@ -16,7 +16,7 @@ export class TimerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.startTimer("00:00:04");
+    this.startTimer("00:02:00");
   }
 
   startTimer(time){
