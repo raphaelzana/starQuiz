@@ -11,6 +11,7 @@ import { SwapiService } from './swapi.service';
 import { TimerComponent } from './timer/timer.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms"
 import { HttpClientModule } from '@angular/common/http';
+import { RankComponent } from './rank/rank.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     BotaoPlayContent,
     BotaoInfoContent,
     EndGameContent,
-    TimerComponent
+    TimerComponent,
+    RankComponent
   ],
   imports: [
     BrowserModule,

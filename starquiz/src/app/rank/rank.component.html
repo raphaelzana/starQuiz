@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="container-fluid cf">
+    <button type="button"  (click)="home()" class="btn btn-warning">home page</button>
+    </div>
+    <table class="table">
+        <thead >
+          <tr  class="border-warning">
+            <th  class="border-warning" scope="col">#</th>
+            <th  class="border-warning" scope="col">Name</th>
+            <th  class="border-warning" scope="col">Email</th>
+            <th  class="border-warning" scope="col">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let r of ranking, let i = index">
+            <th  class="border-warning" scope="row">{{i+1}}</th>
+            <td  class="border-warning">{{r.name}}</td>
+            <td  class="border-warning">{{r.email}}</td>
+            <td  class="border-warning">{{r.point}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>

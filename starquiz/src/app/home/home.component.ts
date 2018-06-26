@@ -11,9 +11,16 @@ export class HomeComponent implements OnInit {
   constructor(private router : Router) { }
 
   image;
+  ranking;
 
   ngOnInit() {
     this.trocarImagem();
+  }
+
+  rank(){
+
+    this.router.navigate(['rank']);
+
   }
 
   play(){
